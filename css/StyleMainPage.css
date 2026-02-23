@@ -1,0 +1,19 @@
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f0f0f0;
+}
+
+nav a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover, nav a:focus {
+    border-color: #007bff;
+    background: white;
+}
