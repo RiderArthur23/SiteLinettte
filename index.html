@@ -39,464 +39,444 @@
     id="header"
     class="fixed top-0 left-0 w-full z-[10000] bg-bgPrimary border-b transition-transform duration-300 ease-in-out"
   >
-    <div class="container mx-auto flex items-center px-6 py-4">
-
-      <span class="float-left mr-2 text-3xl text-secondary font-bold">
-                Le voyage de Line
-            </span>
-
+    <div class="max-w-6xl mx-auto flex items-center px-4 sm:px-6 py-3">
+      <span class="text-xl sm:text-2xl md:text-3xl text-secondary font-bold">
+        Le voyage de Line
+      </span>
     </div>
   </header>
 
-   <div class="w-full h-10 bg-primary"></div>
+  <!-- spacing sous le header -->
+  <div class="w-full h-14"></div>
 
   <!----------------------------------------- PRÉSENTATION ---------------------------------->
-<section
-  id="Nous"
-  class="px-4 sm:px-6 lg:px-16 bg-primary py-14 flex items-center"
->
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center gap-10">
-
-    <div class="w-full md:w-1/2 pb-4 md:pb-8 md:pr-8">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">
-        Pourquoi pourrais-tu avoir besoin de ce site ?
-      </h2>
-
-      <p class="text-gray-700 mb-4 leading-relaxed text-justify md:text-left">
-        Un moment de tristesse mais le décallage ne me permet pas d'être là au moment ou tu en as besoin ?
-        Tu vas normalement trouver tout ce dont tu as besoins ici afin de diminuer un peu ton stress et éviter une petite larme de tristesse ...
-      </p>
-
-      <p class="text-gray-700 mb-4 leading-relaxed text-justify md:text-left">
-        Tu pourras alors trouver plusieurs petis jeux à faire afin de débloquer certaines choses qui te ferons plaisir je pense ...
-      </p>
-
-      <p class="text-gray-700 mb-4 leading-relaxed text-justify md:text-left">
-        A ton arrivée, il est d'abord important que tu t'installes et que tu sois à l'aise. Ensuite, les post-it que je t'ai laissé lors de mon passage t'attendent. Il y en a un pour ton arrivée à Quebec (le premier) et en fonction de comment tu organises tes visites à quebec, tu trouveras les autres. Tu veux savoir comment les trouver ?
-        <a href="Post_It.html" class="text-secondary underline underline-offset-2">
-          Clique ici →
-        </a>
-      </p>
-
-      <p class="text-gray-700 mb-2 leading-relaxed text-justify md:text-left">
-        Tu veux décourvrir tout ce que tu peux débloquer ? Regarde ci-dessous ;)
-      </p>
-    </div>
-
-    <!-- Image -->
-    <div class="w-full md:w-1/2 flex items-center justify-center">
-      <img
-        src="./ressources/duo1.jpg"
-        alt="Travaux de bâtiment"
-        class="w-3/4 max-w-xs sm:max-w-sm md:max-w-full rounded-lg object-cover"
-      />
-    </div>
-
-  </div>
-</section>
-
-
-  <div class="w-full h-1 bg-black"></div>
-
-
-
-    <!----------------------------- Carrousel 1 - rébus ---------------------------------------->
-  <section id="carrousel" class="bg-primary min-h-screen flex flex-col justify-center items-center px-6">
-  <h2 class="text-5xl font-bold text-secondary mb-10 text-center mt-10">
-    Galerie photos
-  </h2>
-  <p class="mb-10 text-2xl text-gray-700">
-      Pour accéder aux photos, trouve le mot de passe à partir de ce rébus
-    </p>
-
-    <p class="mb-10 text-xl text-gray-700">
-      Attention, le rébus risque de changer quand je mettrai la galerie à jour avec de nouvelles photos ...
-    </p>
-
-  <!-- MINI JEU -->
-  <div id="game" class="max-w-md w-full bg-primary p-6 rounded-lg shadow-md text-center mb-10">
-    <img
-      src="./ressources/Rebu/Rebu1.png"
-      alt="Image indice"
-      class="rounded-lg mb-4 mx-auto"
-    />
-
-    <input
-      id="passwordInput"
-      type="text"
-      placeholder="Entre le mot de passe"
-      class="w-full px-4 py-2 border rounded mb-4 focus:outline-none focus:ring-2 focus:ring-secondary"
-    />
-
-    <button
-      onclick="checkPassword()"
-      class="w-full bg-secondary text-white py-2 rounded hover:opacity-90 transition"
-    >
-      Débloquer
-    </button>
-
-    <p id="errorMessage" class="text-red-600 mt-4 hidden">
-      ❌ Ce n’est pas le bon mot…
-    </p>
-
-  </div>
-
-  <div id="carouselContainer" class="hidden w-full max-w-4xl mt-12 mb-10">
-
-  <div class="glide">
-
-    <div class="glide__track" data-glide-el="track">
-      <ul class="glide__slides">
-
-        <li class="glide__slide flex justify-center items-center">
-          <img
-            src="./ressources/duo/duo2.jpg"
-            class="rounded-lg max-h-[450px] w-full object-contain"
-            alt="Photo 1"
-          />
-        </li>
-
-        <li class="glide__slide flex justify-center items-center">
-          <img
-            src="./ressources/duo/duo3.jpg"
-            class="rounded-lg max-h-[450px] w-full object-contain"
-            alt="Photo 2"
-          />
-        </li>
-
-        <li class="glide__slide flex justify-center items-center">
-          <img
-            src="./ressources/duo/duo4.jpg"
-            class="rounded-lg max-h-[450px] w-full object-contain"
-            alt="Photo 3"
-          />
-        </li>
-
-        <li class="glide__slide flex justify-center items-center">
-          <img
-            src="./ressources/duo/duo5.jpg"
-            class="rounded-lg max-h-[450px] w-full object-contain"
-            alt="Photo 3"
-          />
-        </li>
-
-        <li class="glide__slide flex justify-center items-center">
-          <img
-            src="./ressources/duo/duo6.jpg"
-            class="rounded-lg max-h-[450px] w-full object-contain"
-            alt="Photo 3"
-          />
-        </li>
-
-      </ul>
-    </div>
-
-    <div class="glide__arrows flex justify-between mt-6" data-glide-el="controls">
-      <button class="glide__arrow glide__arrow--left px-4 py-2 bg-secondary text-white rounded" data-glide-dir="<">
-        ←
-      </button>
-      <button class="glide__arrow glide__arrow--right px-4 py-2 bg-secondary text-white rounded" data-glide-dir=">">
-        →
-      </button>
-    </div>
-
-  </div>
-</div>
-
-
-<div class="w-full h-1 bg-black"></div>
-
-
-    <!----------------------------- Point historique ---------------------------------------->
- <section
+  <section
     id="Nous"
-    class="px-8 bg-primary h-screen min-h-96 flex justify-center items-center mb-10"
+    class="px-4 sm:px-6 lg:px-16 bg-primary py-12 flex items-center"
   >
-    <div class="container mx-auto flex flex-col sm:flex-row justify-center items-center">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center gap-10">
 
-      <div class="pb-8 sm:w-1/2 sm:pr-8">
-        <h2 class="text-3xl font-bold mb-6 text-secondary">
-          Petit point historique sur nous !
+      <div class="w-full md:w-1/2 pb-4 md:pb-8 md:pr-8">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">
+          Pourquoi pourrais-tu avoir besoin de ce site ?
         </h2>
 
-        <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
-          Bon, si tu te souviens bien, notre première soirée ensemble n’était pas spécialement faite pour nous deux, MAIS sans cette soirée, notre si belle relation n’existerait pas...
-        </p>
-        <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
-          Suite à cet événement nous avons eu notre petite période « olé olé » pour laquelle on peut être heureux que la cave n’ait pas de caméras.
-        </p>
-        <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
-          Après l’ultimatum que je me suis pris en pleine figure, il a bien fallu avouer que je t’aimais bien plus que je ne le pensais. Et grâce à toi, on peut vivre cette relation de fou ❤️
+        <p class="text-gray-700 mb-4 leading-relaxed text-justify md:text-left text-base sm:text-lg">
+          Un moment de tristesse mais le décallage ne me permet pas d'être là au moment ou tu en as besoin ?
+          Tu vas normalement trouver tout ce dont tu as besoins ici afin de diminuer un peu ton stress et éviter une petite larme de tristesse ...
         </p>
 
+        <p class="text-gray-700 mb-4 leading-relaxed text-justify md:text-left text-base sm:text-lg">
+          Tu pourras alors trouver plusieurs petis jeux à faire afin de débloquer certaines choses qui te ferons plaisir je pense ...
+        </p>
+
+        <p class="text-gray-700 mb-4 leading-relaxed text-justify md:text-left text-base sm:text-lg">
+          A ton arrivée, il est d'abord important que tu t'installes et que tu sois à l'aise. Ensuite, les post-it que je t'ai laissé lors de mon passage t'attendent. Il y en a un pour ton arrivée à Quebec (le premier) et en fonction de comment tu organises tes visites à quebec, tu trouveras les autres. Tu veux savoir comment les trouver ?
+          <a href="Post_It.html" class="text-secondary underline underline-offset-2">
+            Clique ici →
+          </a>
+        </p>
+
+        <p class="text-gray-700 mb-2 leading-relaxed text-justify md:text-left text-base sm:text-lg">
+          Tu veux décourvrir tout ce que tu peux débloquer ? Regarde ci-dessous ;)
+        </p>
       </div>
 
       <!-- Image -->
-      <div class="sm:w-1/2 flex items-center justify-center">
+      <div class="w-full md:w-1/2 flex items-center justify-center">
         <img
-          src="./ressources/intello.png"
+          src="./ressources/duo1.jpg"
           alt="Travaux de bâtiment"
-          class="w-3/4 rounded-lg max-h-[450px]"
+          class="w-3/4 max-w-xs sm:max-w-sm md:max-w-full rounded-lg object-cover"
         />
       </div>
 
     </div>
   </section>
-  
 
-  <div class="w-full h-1 bg-black"></div>
+  <div class="w-full h-px bg-black"></div>
+
+  <!----------------------------- Carrousel 1 - rébus ---------------------------------------->
+  <section id="carrousel" class="bg-primary w-full py-12 px-4 sm:px-6 flex flex-col items-center">
+    <div class="max-w-5xl w-full flex flex-col items-center text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-secondary mb-6 mt-4">
+        Galerie photos
+      </h2>
+      <p class="mb-4 text-lg sm:text-2xl text-gray-700">
+        Pour accéder aux photos, trouve le mot de passe à partir de ce rébus
+      </p>
+
+      <p class="mb-8 text-base sm:text-xl text-gray-700">
+        Attention, le rébus risque de changer quand je mettrai la galerie à jour avec de nouvelles photos ...
+      </p>
+
+      <!-- MINI JEU -->
+      <div id="game" class="max-w-md w-full bg-primary p-6 rounded-lg shadow-md text-center mb-10">
+        <img
+          src="./ressources/Rebu/Rebu1.png"
+          alt="Image indice"
+          class="rounded-lg mb-4 mx-auto w-full h-auto"
+        />
+
+        <input
+          id="passwordInput"
+          type="text"
+          placeholder="Entre le mot de passe"
+          class="w-full px-4 py-2 border rounded mb-4 focus:outline-none focus:ring-2 focus:ring-secondary text-base"
+        />
+
+        <button
+          onclick="checkPassword()"
+          class="w-full bg-secondary text-white py-2 rounded hover:opacity-90 transition text-base"
+        >
+          Débloquer
+        </button>
+
+        <p id="errorMessage" class="text-red-600 mt-4 hidden text-sm">
+          ❌ Ce n’est pas le bon mot…
+        </p>
+      </div>
+
+      <!-- CARROUSEL -->
+      <div id="carouselContainer" class="hidden w-full max-w-4xl mt-4 mb-6">
+        <div class="glide">
+
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+
+              <li class="glide__slide flex justify-center items-center px-2">
+                <img
+                  src="./ressources/duo/duo2.jpg"
+                  class="rounded-lg max-h-[400px] w-full object-contain"
+                  alt="Photo 1"
+                />
+              </li>
+
+              <li class="glide__slide flex justify-center items-center px-2">
+                <img
+                  src="./ressources/duo/duo3.jpg"
+                  class="rounded-lg max-h-[400px] w-full object-contain"
+                  alt="Photo 2"
+                />
+              </li>
+
+              <li class="glide__slide flex justify-center items-center px-2">
+                <img
+                  src="./ressources/duo/duo4.jpg"
+                  class="rounded-lg max-h-[400px] w-full object-contain"
+                  alt="Photo 3"
+                />
+              </li>
+
+              <li class="glide__slide flex justify-center items-center px-2">
+                <img
+                  src="./ressources/duo/duo5.jpg"
+                  class="rounded-lg max-h-[400px] w-full object-contain"
+                  alt="Photo 4"
+                />
+              </li>
+
+              <li class="glide__slide flex justify-center items-center px-2">
+                <img
+                  src="./ressources/duo/duo6.jpg"
+                  class="rounded-lg max-h-[400px] w-full object-contain"
+                  alt="Photo 5"
+                />
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="glide__arrows flex justify-between mt-4 px-4" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left px-3 py-2 bg-secondary text-white rounded text-sm sm:text-base" data-glide-dir="<">
+              ←
+            </button>
+            <button class="glide__arrow glide__arrow--right px-3 py-2 bg-secondary text-white rounded text-sm sm:text-base" data-glide-dir=">">
+              →
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="w-full h-px bg-black"></div>
+
+  <!----------------------------- Point historique ---------------------------------------->
+  <section
+    id="Nous-histoire"
+    class="px-4 sm:px-6 lg:px-16 bg-primary py-12 flex justify-center items-center"
+  >
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center gap-10">
+
+      <div class="w-full md:w-1/2 pb-4 md:pb-8 md:pr-8">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">
+          Petit point historique sur nous !
+        </h2>
+
+        <p class="text-gray-700 mb-4 leading-relaxed text-justify md:text-left text-base sm:text-lg">
+          Bon, si tu te souviens bien, notre première soirée ensemble n’était pas spécialement faite pour nous deux, MAIS sans cette soirée, notre si belle relation n’existerait pas...
+        </p>
+        <p class="text-gray-700 mb-4 leading-relaxed text-justify md:text-left text-base sm:text-lg">
+          Suite à cet événement nous avons eu notre petite période « olé olé » pour laquelle on peut être heureux que la cave n’ait pas de caméras.
+        </p>
+        <p class="text-gray-700 mb-4 leading-relaxed text-justify md:text-left text-base sm:text-lg">
+          Après l’ultimatum que je me suis pris en pleine figure, il a bien fallu avouer que je t’aimais bien plus que je ne le pensais. Et grâce à toi, on peut vivre cette relation de fou ❤️
+        </p>
+      </div>
+
+      <!-- Image -->
+      <div class="w-full md:w-1/2 flex items-center justify-center">
+        <img
+          src="./ressources/intello.png"
+          alt="Petit point historique"
+          class="w-3/4 max-w-xs sm:max-w-sm md:max-w-full rounded-lg max-h-[400px] object-contain"
+        />
+      </div>
+
+    </div>
+  </section>
+
+  <div class="w-full h-px bg-black"></div>
 
   <!----------------------------- STATISTIQUES SPORT ---------------------------------------->
-<section class="px-8 bg-primary py-20 flex justify-center items-center mb-10">
-  <div class="container mx-auto text-center">
+  <section class="px-4 sm:px-6 lg:px-16 bg-primary py-14 flex justify-center items-center">
+    <div class="max-w-5xl mx-auto text-center">
 
-    <h2 class="text-4xl font-bold text-secondary mb-8">
-      Est-ce que je vais être un gros lard quand tu rentres ?
-    </h2>
-    <p class="mb-1 text-xl text-gray-700">
-      Comme tu l'as compris, j'ai pour objectif d'être tout beau gosse quand tu rentres !
-    </p>
-    <p class="mb-1 text-xl text-gray-700">
-      Pour être sûr d'atteindre cet objectif, tu vas pouvoir suivre le récap de toutes mes activités 
-    </p>
-    <p class="mb-10 text-xl text-gray-700">
-      et m'envoyer un message si tu vois que ça n'avance pas des masses pour m'engueuler. 
-    </p>
+      <h2 class="text-3xl sm:text-4xl font-bold text-secondary mb-6">
+        Est-ce que je vais être un gros lard quand tu rentres ?
+      </h2>
+      <p class="mb-1 text-lg sm:text-xl text-gray-700">
+        Comme tu l'as compris, j'ai pour objectif d'être tout beau gosse quand tu rentres !
+      </p>
+      <p class="mb-1 text-lg sm:text-xl text-gray-700">
+        Pour être sûr d'atteindre cet objectif, tu vas pouvoir suivre le récap de toutes mes activités
+      </p>
+      <p class="mb-8 text-lg sm:text-xl text-gray-700">
+        et m'envoyer un message si tu vois que ça n'avance pas des masses pour m'engueuler.
+      </p>
 
-    <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid md:grid-cols-3 gap-6">
 
-      <!-- Course -->
-      <div class="bg-white p-8 rounded-lg shadow-md">
-        <h3 class="text-2xl font-bold mb-4">🏃 Course à pied</h3>
-        <p class="text-lg">Sorties : <span id="runCount" class="font-bold text-secondary">0</span></p>
-        <p class="text-lg">Kilomètres parcourus : <span id="runKm" class="font-bold text-secondary">0</span> km</p>
-      </div>
-
-      <!-- Vélo -->
-      <div class="bg-white p-8 rounded-lg shadow-md">
-        <h3 class="text-2xl font-bold mb-4">🚴 Vélo</h3>
-        <p class="text-lg">Sorties : <span id="bikeCount" class="font-bold text-secondary">0</span></p>
-        <p class="text-lg">Kilomètres parcourus : <span id="bikeKm" class="font-bold text-secondary">0</span> km</p>
-      </div>
-
-      <!-- Musculation -->
-      <div class="bg-white p-8 rounded-lg shadow-md">
-        <h3 class="text-2xl font-bold mb-4">💪 Musculation</h3>
-        <p class="text-lg">Séances : <span id="gymCount" class="font-bold text-secondary">0</span></p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<div class="w-full h-1 bg-black"></div>
-
-
-<!----------------------------- QUESTION PIÈGE ---------------------------------------->
-<section class="px-8 bg-primary py-20 flex justify-center items-center w-full mb-10">
-  <div class="container mx-auto text-center">
-
-    <h2 class="text-4xl font-bold text-secondary mb-8">
-      Tu veux me quitter ? 😢
-    </h2>
-
-    <div class="relative flex justify-center items-center gap-8 mt-10">
-
-      <!-- Bouton OUI (qui fuit) -->
-      <button
-        id="yesBtn"
-        class="px-10 py-5 bg-red-500 text-white rounded-lg shadow-lg transition absolute text-4xl"
-        style="left: 40%; top: 50%; transform: translate(-50%, -50%);"
-      >
-        OUI
-      </button>
-
-      <!-- Bouton NON -->
-      <button
-        id="noBtn"
-        class="px-8 py-1 bg-secondary text-white rounded-lg shadow-lg mt-40"
-      >
-        NON
-      </button>
-
-    </div>
-
-    <!-- Image cachée -->
-    <div id="loveImage" class="hidden mt-12 flex flex-col items-center">
-  
-  <h2 class="text-4xl font-bold text-secondary mb-6 text-center">
-    J'en étais sûr mon bébé d'amour que j'aime ❤️
-  </h2>
-
-  <img
-    src="./ressources/duo2.jpg"
-    alt="Photo amour"
-    class="rounded-xl shadow-xl max-w-md max-h-[450px]"
-  />
-
-</div>
-
-
-  </div>
-</section>
-
-<div class="w-full h-1 bg-black"></div>
-
-<!-- SECTION RELIER LES MOTS -->
-<section class="px-8 bg-primary py-20 flex justify-center items-center">
-  <div class="container mx-auto text-center">
-
-    <h2 class="text-4xl font-bold text-secondary mb-10">
-      Relie les bons mots 
-    </h2>
-
-    <p class="mb-10 text-xl text-gray-700">
-      Clique sur deux mots qui vont ensemble !
-    </p>
-
-    <div id="matchGame" class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
-
-    <button class="match-btn bg-white p-4 rounded shadow" data-pair="1">Loup</button>
-    <button class="match-btn bg-white p-4 rounded shadow" data-pair="4">Malade</button>
-    <button class="match-btn bg-white p-4 rounded shadow" data-pair="2">Pied</button>
-    <button class="match-btn bg-white p-4 rounded shadow" data-pair="3">Line</button>
-    <button class="match-btn bg-white p-4 rounded shadow" data-pair="4">Porto</button>
-    <button class="match-btn bg-white p-4 rounded shadow" data-pair="2">Pue</button>
-    <button class="match-btn bg-white p-4 rounded shadow" data-pair="1">Fondue</button>
-    <button class="match-btn bg-white p-4 rounded shadow" data-pair="3">Nue</button>
-
-    <button class="match-btn bg-white p-4 rounded shadow" data-pair="5">Bave</button>
-    <button class="match-btn bg-white p-4 rounded shadow" data-pair="5">Lily</button>
-    <button class="match-btn bg-white p-4 rounded shadow" data-pair="6">Zizi</button>
-    <button class="match-btn bg-white p-4 rounded shadow" data-pair="6">Coco</button>
-
-    </div>
-
-    <!-- Image cachée -->
-    <div id="matchSuccess" class="hidden mt-12 flex flex-col items-center">
-      <h3 class="text-3xl font-bold text-secondary mb-6">
-        T'as les refs donc tu as gagné ça :
-      </h3>
-
-      <img src="./ressources/CouponErotique.png"
-           class="rounded-xl shadow-xl max-w-md max-h-[450px]" />
-    </div>
-
-  </div>
-</section>
-
-
-<div class="w-full h-1 bg-black"></div>
-
-
-<!-- SECTION MESSAGES DÉBLOQUÉS PAR DATE -->
-<section class="px-8 bg-primary py-20 flex justify-center items-center">
-  <div class="container mx-auto text-center max-w-3xl">
-
-    <h2 class="text-4xl font-bold text-secondary mb-10">
-      Des petits mots t'attendent ...
-    </h2>
-
-    <p class="mb-10 text-xl text-gray-700">
-      Des petits mots se débloquerons au fur et à mesure de ton séjour à Quebec, n'oublie pas alors de revenir régulièrement pour voir si de nouveaux messages sont disponibles !
-    </p>
-
-    <div class="space-y-6">
-
-      <!-- Message 1 -->
-      <div class="message-card bg-white p-6 rounded-lg shadow-md"
-           data-date="2026-02-27">
-        <div class="locked text-gray-500">
-          🔒 Ce message sera disponible le 27 février 2026
+        <!-- Course -->
+        <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+          <h3 class="text-xl sm:text-2xl font-bold mb-4">🏃 Course à pied</h3>
+          <p class="text-base sm:text-lg">Sorties : <span id="runCount" class="font-bold text-secondary">0</span></p>
+          <p class="text-base sm:text-lg">Kilomètres parcourus : <span id="runKm" class="font-bold text-secondary">0</span> km</p>
         </div>
-        <div class="unlocked hidden text-gray-800 text-lg">
-          Bien installée mon coeur ? Je suis tellement content pour toi que tu vives ça alors profite !
-        </div>
-      </div>
 
-      <!-- Message 2 -->
-      <div class="message-card bg-white p-6 rounded-lg shadow-md"
-           data-date="2026-02-29">
-        <div class="locked text-gray-500">
-          🔒 Ce message sera disponible le 29 février 2026
+        <!-- Vélo -->
+        <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+          <h3 class="text-xl sm:text-2xl font-bold mb-4">🚴 Vélo</h3>
+          <p class="text-base sm:text-lg">Sorties : <span id="bikeCount" class="font-bold text-secondary">0</span></p>
+          <p class="text-base sm:text-lg">Kilomètres parcourus : <span id="bikeKm" class="font-bold text-secondary">0</span> km</p>
         </div>
-        <div class="unlocked hidden text-gray-800 text-lg">
-          Normalement à ce stade tu dois avoir déjà pris quelques repères.. La ville te plaît ? Oublie pas ton homme belge musclé !
-        </div>
-      </div>
 
-      <!-- Message 3 -->
-      <div class="message-card bg-white p-6 rounded-lg shadow-md"
-           data-date="2026-03-1">
-        <div class="locked text-gray-500">
-          🔒 Ce message sera disponible le 1 mars 2026
+        <!-- Musculation -->
+        <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+          <h3 class="text-xl sm:text-2xl font-bold mb-4">💪 Musculation</h3>
+          <p class="text-base sm:text-lg">Séances : <span id="gymCount" class="font-bold text-secondary">0</span></p>
         </div>
-        <div class="unlocked hidden text-gray-800 text-lg">
-          Madame est officiellement québécoise, je pense vraiment à toi et au petit accent que tu vas avoir !!
-        </div>
-      </div>
 
-      <!-- Message 4 -->
-      <div class="message-card bg-white p-6 rounded-lg shadow-md"
-           data-date="2026-03-4">
-        <div class="locked text-gray-500">
-          🔒 Ce message sera disponible le 4 mars 2026
-        </div>
-        <div class="unlocked hidden text-gray-800 text-lg">
-          Quans j'écris ça, tu n'es pas encore partie mais je commence à réaliser que tu vas être loin pendant un moment .. Même si je ne suis pas fan des appels, je serai toujours content d'en avoir un de ta part <3
-        </div>
-      </div>
-
-      <!-- Message 5 -->
-      <div class="message-card bg-white p-6 rounded-lg shadow-md"
-           data-date="2026-03-7">
-        <div class="locked text-gray-500">
-          🔒 Ce message sera disponible le 7 mars 2026
-        </div>
-        <div class="unlocked hidden text-gray-800 text-lg">
-          Imagine le nombre de partie de jambe en l'air qu'on va louper, il faudra toutes les rattraper ... Je pense vraiment à toi 
-        </div>
-      </div>
-
-      <!-- Message 6 -->
-      <div class="message-card bg-white p-6 rounded-lg shadow-md"
-           data-date="2026-03-10">
-        <div class="locked text-gray-500">
-          🔒 Ce message sera disponible le 10 mars 2026
-        </div>
-        <div class="unlocked hidden text-gray-800 text-lg">
-          En espérant que les québecois ne t'attirent pas trop, ma copine me manque fort <3
-        </div>
-      </div>
-
-      <!-- Message 7 -->
-      <div class="message-card bg-white p-6 rounded-lg shadow-md"
-           data-date="2026-03-13">
-        <div class="locked text-gray-500">
-          🔒 Ce message sera disponible le 13 mars 2026
-        </div>
-        <div class="unlocked hidden text-gray-800 text-lg">
-          En plaine scéance de sport, je repense à nos petites courses à pied ensemble et c'est tellement agréable. Vivement nos petites sorties !
-        </div>
       </div>
 
     </div>
-  </div>
-</section>
+  </section>
 
+  <div class="w-full h-px bg-black"></div>
 
+  <!----------------------------- QUESTION PIÈGE ---------------------------------------->
+  <section class="px-4 sm:px-6 lg:px-16 bg-primary py-14 flex justify-center items-center w-full">
+    <div class="max-w-4xl mx-auto text-center w-full">
 
+      <h2 class="text-3xl sm:text-4xl font-bold text-secondary mb-6">
+        Tu veux me quitter ? 😢
+      </h2>
 
+      <div class="relative w-full max-w-md mx-auto h-64 sm:h-72 flex justify-center items-center mt-6">
 
-  
-<!------------------------------------------------------------------------------------------------------------------>
-<!----------------------------------------------Scripts JavaScripts------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------>
+        <!-- Bouton OUI (qui fuit) -->
+        <button
+          id="yesBtn"
+          class="px-6 sm:px-8 py-3 bg-red-500 text-white rounded-lg shadow-lg transition absolute text-xl sm:text-2xl"
+          style="left: 50%; top: 50%; transform: translate(-50%, -50%);"
+        >
+          OUI
+        </button>
 
+        <!-- Bouton NON -->
+        <button
+          id="noBtn"
+          class="px-6 sm:px-8 py-3 bg-secondary text-white rounded-lg shadow-lg"
+        >
+          NON
+        </button>
+      </div>
 
-<!-- HEADER SCRIPT -->
+      <!-- Image cachée -->
+      <div id="loveImage" class="hidden mt-10 flex flex-col items-center px-4">
+        <h2 class="text-2xl sm:text-3xl font-bold text-secondary mb-4 text-center">
+          J'en étais sûr mon bébé d'amour que j'aime ❤️
+        </h2>
+
+        <img
+          src="./ressources/duo2.jpg"
+          alt="Photo amour"
+          class="rounded-xl shadow-xl max-w-xs sm:max-w-md max-h-[400px] object-contain"
+        />
+      </div>
+
+    </div>
+  </section>
+
+  <div class="w-full h-px bg-black"></div>
+
+  <!-- SECTION RELIER LES MOTS -->
+  <section class="px-4 sm:px-6 lg:px-16 bg-primary py-14 flex justify-center items-center">
+    <div class="max-w-4xl mx-auto text-center w-full">
+
+      <h2 class="text-3xl sm:text-4xl font-bold text-secondary mb-6">
+        Relie les bons mots
+      </h2>
+
+      <p class="mb-8 text-lg sm:text-xl text-gray-700">
+        Clique sur deux mots qui vont ensemble !
+      </p>
+
+      <div id="matchGame" class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-3xl mx-auto">
+
+        <button class="match-btn bg-white p-3 sm:p-4 rounded shadow text-sm sm:text-base" data-pair="1">Loup</button>
+        <button class="match-btn bg-white p-3 sm:p-4 rounded shadow text-sm sm:text-base" data-pair="4">Malade</button>
+        <button class="match-btn bg-white p-3 sm:p-4 rounded shadow text-sm sm:text-base" data-pair="2">Pied</button>
+        <button class="match-btn bg-white p-3 sm:p-4 rounded shadow text-sm sm:text-base" data-pair="3">Line</button>
+        <button class="match-btn bg-white p-3 sm:p-4 rounded shadow text-sm sm:text-base" data-pair="4">Porto</button>
+        <button class="match-btn bg-white p-3 sm:p-4 rounded shadow text-sm sm:text-base" data-pair="2">Pue</button>
+        <button class="match-btn bg-white p-3 sm:p-4 rounded shadow text-sm sm:text-base" data-pair="1">Fondue</button>
+        <button class="match-btn bg-white p-3 sm:p-4 rounded shadow text-sm sm:text-base" data-pair="3">Nue</button>
+
+        <button class="match-btn bg-white p-3 sm:p-4 rounded shadow text-sm sm:text-base" data-pair="5">Bave</button>
+        <button class="match-btn bg-white p-3 sm:p-4 rounded shadow text-sm sm:text-base" data-pair="5">Lily</button>
+        <button class="match-btn bg-white p-3 sm:p-4 rounded shadow text-sm sm:text-base" data-pair="6">Zizi</button>
+        <button class="match-btn bg-white p-3 sm:p-4 rounded shadow text-sm sm:text-base" data-pair="6">Coco</button>
+
+      </div>
+
+      <!-- Image cachée -->
+      <div id="matchSuccess" class="hidden mt-10 flex flex-col items-center px-4">
+        <h3 class="text-2xl sm:text-3xl font-bold text-secondary mb-4">
+          T'as les refs donc tu as gagné ça :
+        </h3>
+
+        <img src="./ressources/CouponErotique.png"
+             class="rounded-xl shadow-xl max-w-xs sm:max-w-md max-h-[400px] object-contain" />
+      </div>
+
+    </div>
+  </section>
+
+  <div class="w-full h-px bg-black"></div>
+
+  <!-- SECTION MESSAGES DÉBLOQUÉS PAR DATE -->
+  <section class="px-4 sm:px-6 lg:px-16 bg-primary py-14 flex justify-center items-center">
+    <div class="max-w-3xl mx-auto text-center w-full">
+
+      <h2 class="text-3xl sm:text-4xl font-bold text-secondary mb-6">
+        Des petits mots t'attendent ...
+      </h2>
+
+      <p class="mb-8 text-lg sm:text-xl text-gray-700">
+        Des petits mots se débloquerons au fur et à mesure de ton séjour à Quebec, n'oublie pas alors de revenir régulièrement pour voir si de nouveaux messages sont disponibles !
+      </p>
+
+      <div class="space-y-5">
+
+        <!-- Message 1 -->
+        <div class="message-card bg-white p-5 sm:p-6 rounded-lg shadow-md"
+             data-date="2026-02-27">
+          <div class="locked text-gray-500 text-sm sm:text-base">
+            🔒 Ce message sera disponible le 27 février 2026
+          </div>
+          <div class="unlocked hidden text-gray-800 text-base sm:text-lg">
+            Bien installée mon coeur ? Je suis tellement content pour toi que tu vives ça alors profite !
+          </div>
+        </div>
+
+        <!-- Message 2 -->
+        <div class="message-card bg-white p-5 sm:p-6 rounded-lg shadow-md"
+             data-date="2026-02-29">
+          <div class="locked text-gray-500 text-sm sm:text-base">
+            🔒 Ce message sera disponible le 29 février 2026
+          </div>
+          <div class="unlocked hidden text-gray-800 text-base sm:text-lg">
+            Normalement à ce stade tu dois avoir déjà pris quelques repères.. La ville te plaît ? Oublie pas ton homme belge musclé !
+          </div>
+        </div>
+
+        <!-- Message 3 -->
+        <div class="message-card bg-white p-5 sm:p-6 rounded-lg shadow-md"
+             data-date="2026-03-01">
+          <div class="locked text-gray-500 text-sm sm:text-base">
+            🔒 Ce message sera disponible le 1 mars 2026
+          </div>
+          <div class="unlocked hidden text-gray-800 text-base sm:text-lg">
+            Madame est officiellement québécoise, je pense vraiment à toi et au petit accent que tu vas avoir !!
+          </div>
+        </div>
+
+        <!-- Message 4 -->
+        <div class="message-card bg-white p-5 sm:p-6 rounded-lg shadow-md"
+             data-date="2026-03-04">
+          <div class="locked text-gray-500 text-sm sm:text-base">
+            🔒 Ce message sera disponible le 4 mars 2026
+          </div>
+          <div class="unlocked hidden text-gray-800 text-base sm:text-lg">
+            Quans j'écris ça, tu n'es pas encore partie mais je commence à réaliser que tu vas être loin pendant un moment .. Même si je ne suis pas fan des appels, je serai toujours content d'en avoir un de ta part &lt;3
+          </div>
+        </div>
+
+        <!-- Message 5 -->
+        <div class="message-card bg-white p-5 sm:p-6 rounded-lg shadow-md"
+             data-date="2026-03-07">
+          <div class="locked text-gray-500 text-sm sm:text-base">
+            🔒 Ce message sera disponible le 7 mars 2026
+          </div>
+          <div class="unlocked hidden text-gray-800 text-base sm:text-lg">
+            Imagine le nombre de partie de jambe en l'air qu'on va louper, il faudra toutes les rattraper ... Je pense vraiment à toi
+          </div>
+        </div>
+
+        <!-- Message 6 -->
+        <div class="message-card bg-white p-5 sm:p-6 rounded-lg shadow-md"
+             data-date="2026-03-10">
+          <div class="locked text-gray-500 text-sm sm:text-base">
+            🔒 Ce message sera disponible le 10 mars 2026
+          </div>
+          <div class="unlocked hidden text-gray-800 text-base sm:text-lg">
+            En espérant que les québecois ne t'attirent pas trop, ma copine me manque fort &lt;3
+          </div>
+        </div>
+
+        <!-- Message 7 -->
+        <div class="message-card bg-white p-5 sm:p-6 rounded-lg shadow-md"
+             data-date="2026-03-13">
+          <div class="locked text-gray-500 text-sm sm:text-base">
+            🔒 Ce message sera disponible le 13 mars 2026
+          </div>
+          <div class="unlocked hidden text-gray-800 text-base sm:text-lg">
+            En plaine scéance de sport, je repense à nos petites courses à pied ensemble et c'est tellement agréable. Vivement nos petites sorties !
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!------------------------------------------------------------------------------------------------------------------>
+  <!----------------------------------------------Scripts JavaScripts------------------------------------------------->
+  <!------------------------------------------------------------------------------------------------------------------>
+
+  <!-- HEADER SCRIPT -->
   <script>
     const header = document.getElementById("header");
     let lastScroll = 0;
@@ -514,210 +494,195 @@
     });
   </script>
 
-  
-<!-- Galerie photo avec mdp -->
-   <script>
-  const PASSWORD = "lunette"; // ← mot de passe à deviner
+  <!-- Galerie photo avec mdp -->
+  <script>
+    const PASSWORD = "lunette"; // mot de passe à deviner
 
-  function checkPassword() {
-    const input = document.getElementById("passwordInput").value.toLowerCase();
-    const error = document.getElementById("errorMessage");
-    const game = document.getElementById("game");
-    const carousel = document.getElementById("carouselContainer");
+    function checkPassword() {
+      const input = document.getElementById("passwordInput").value.toLowerCase();
+      const error = document.getElementById("errorMessage");
+      const game = document.getElementById("game");
+      const carousel = document.getElementById("carouselContainer");
 
-    if (input === PASSWORD) {
-      game.classList.add("hidden");
-      carousel.classList.remove("hidden");
+      if (input === PASSWORD) {
+        game.classList.add("hidden");
+        carousel.classList.remove("hidden");
 
-      new Glide('.glide', {
-        type: 'carousel',
-        perView: 1,
-        autoplay: 4000,
-        hoverpause: true
-      }).mount();
-    } else {
-      error.classList.remove("hidden");
-    }
-  }
-</script>
-
-<!-- Section sport -->
-<script>
-  // ===== DONNÉES SPORT =====
-  const activities = {
-    running: [1.25],   // km par sortie
-    cycling: [],    // km par sortie
-    gym: []      // 1 = 1 séance
-  };
-
-  function updateStats() {
-    // Course
-    const runCount = activities.running.length;
-    const runKm = activities.running.reduce((a, b) => a + b, 0);
-
-    // Vélo
-    const bikeCount = activities.cycling.length;
-    const bikeKm = activities.cycling.reduce((a, b) => a + b, 0);
-
-    // Muscu
-    const gymCount = activities.gym.length;
-
-    // Injection dans le HTML
-    document.getElementById("runCount").textContent = runCount;
-    document.getElementById("runKm").textContent = runKm;
-
-    document.getElementById("bikeCount").textContent = bikeCount;
-    document.getElementById("bikeKm").textContent = bikeKm;
-
-    document.getElementById("gymCount").textContent = gymCount;
-  }
-
-  updateStats();
-</script>
-
-<!-- Section piege -->
-<script>
-  const yesBtn = document.getElementById("yesBtn");
-  const noBtn = document.getElementById("noBtn");
-  const loveImage = document.getElementById("loveImage");
-
-  const container = yesBtn.parentElement;
-
-  // On enlève la transition lente
-  yesBtn.style.transition = "all 0.15s ease";
-
-  function moveButton(e) {
-    const rect = container.getBoundingClientRect();
-
-    const btnWidth = yesBtn.offsetWidth;
-    const btnHeight = yesBtn.offsetHeight;
-
-    // Position actuelle de la souris
-    const mouseX = e.clientX - rect.left;
-    const mouseY = e.clientY - rect.top;
-
-    // Génère une position loin de la souris
-    let newX, newY;
-
-    do {
-      newX = Math.random() * (rect.width - btnWidth);
-      newY = Math.random() * (rect.height - btnHeight);
-    } 
-    // Tant que le bouton reste proche de la souris, on régénère
-    while (Math.abs(newX - mouseX) < 150 && Math.abs(newY - mouseY) < 150);
-
-    yesBtn.style.left = newX + "px";
-    yesBtn.style.top = newY + "px";
-  }
-
-  // Détection plus large (pas juste hover)
-  container.addEventListener("mousemove", (e) => {
-    const btnRect = yesBtn.getBoundingClientRect();
-    const distance =
-      Math.hypot(
-        e.clientX - (btnRect.left + btnRect.width / 2),
-        e.clientY - (btnRect.top + btnRect.height / 2)
-      );
-
-    if (distance < 120) {
-      moveButton(e);
-    }
-  });
-
-  // Clique sur NON
-  noBtn.addEventListener("click", () => {
-    loveImage.classList.remove("hidden");
-  });
-</script>
-
-<!-- Section relier les mots -->
-
-<script>
-  function shuffleButtons() {
-    const container = document.getElementById("matchGame");
-    const buttons = Array.from(container.children);
-
-    // Algorithme Fisher-Yates (vrai mélange aléatoire)
-    for (let i = buttons.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [buttons[i], buttons[j]] = [buttons[j], buttons[i]];
-    }
-
-    // Réinjecte les boutons mélangés
-    buttons.forEach(button => container.appendChild(button));
-  }
-
-  // Mélange au chargement de la page
-  window.addEventListener("DOMContentLoaded", shuffleButtons);
-</script>
-
- <script>
-  const buttons = document.querySelectorAll(".match-btn");
-  const success = document.getElementById("matchSuccess");
-
-  let firstSelection = null;
-  let matchedPairs = 0;
-  const totalPairs = 6;
-
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-
-      if (button.classList.contains("bg-green-400")) return;
-
-      if (!firstSelection) {
-        firstSelection = button;
-        button.classList.add("bg-secondary", "text-white");
+        new Glide('.glide', {
+          type: 'carousel',
+          perView: 1,
+          autoplay: 4000,
+          hoverpause: true
+        }).mount();
       } else {
-        if (firstSelection.dataset.pair === button.dataset.pair && firstSelection !== button) {
-          // Bonne paire
-          firstSelection.classList.remove("bg-secondary", "text-white");
-          button.classList.remove("bg-secondary", "text-white");
+        error.classList.remove("hidden");
+      }
+    }
+  </script>
 
-          firstSelection.classList.add("bg-green-400", "text-white");
-          button.classList.add("bg-green-400", "text-white");
+  <!-- Section sport -->
+  <script>
+    // DONNÉES SPORT
+    const activities = {
+      running: [1.25],   // km par sortie
+      cycling: [],       // km par sortie
+      gym: []            // 1 = 1 séance
+    };
 
-          matchedPairs++;
+    function updateStats() {
+      // Course
+      const runCount = activities.running.length;
+      const runKm = activities.running.reduce((a, b) => a + b, 0);
 
-          if (matchedPairs === totalPairs) {
-            success.classList.remove("hidden");
+      // Vélo
+      const bikeCount = activities.cycling.length;
+      const bikeKm = activities.cycling.reduce((a, b) => a + b, 0);
+
+      // Muscu
+      const gymCount = activities.gym.length;
+
+      // Injection dans le HTML
+      document.getElementById("runCount").textContent = runCount;
+      document.getElementById("runKm").textContent = runKm;
+
+      document.getElementById("bikeCount").textContent = bikeCount;
+      document.getElementById("bikeKm").textContent = bikeKm;
+
+      document.getElementById("gymCount").textContent = gymCount;
+    }
+
+    updateStats();
+  </script>
+
+  <!-- Section piège -->
+  <script>
+    const yesBtn = document.getElementById("yesBtn");
+    const noBtn = document.getElementById("noBtn");
+    const loveImage = document.getElementById("loveImage");
+
+    const containerYes = yesBtn.parentElement;
+
+    yesBtn.style.transition = "all 0.15s ease";
+
+    function moveButton(e) {
+      const rect = containerYes.getBoundingClientRect();
+
+      const btnWidth = yesBtn.offsetWidth;
+      const btnHeight = yesBtn.offsetHeight;
+
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+
+      let newX, newY;
+
+      do {
+        newX = Math.random() * (rect.width - btnWidth);
+        newY = Math.random() * (rect.height - btnHeight);
+      }
+      while (Math.abs(newX - mouseX) < 80 && Math.abs(newY - mouseY) < 80);
+
+      yesBtn.style.left = newX + "px";
+      yesBtn.style.top = newY + "px";
+    }
+
+    containerYes.addEventListener("mousemove", (e) => {
+      const btnRect = yesBtn.getBoundingClientRect();
+      const distance =
+        Math.hypot(
+          e.clientX - (btnRect.left + btnRect.width / 2),
+          e.clientY - (btnRect.top + btnRect.height / 2)
+        );
+
+      if (distance < 90) {
+        moveButton(e);
+      }
+    });
+
+    noBtn.addEventListener("click", () => {
+      loveImage.classList.remove("hidden");
+      loveImage.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+  </script>
+
+  <!-- Section relier les mots -->
+  <script>
+    function shuffleButtons() {
+      const container = document.getElementById("matchGame");
+      const buttons = Array.from(container.children);
+
+      for (let i = buttons.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [buttons[i], buttons[j]] = [buttons[j], buttons[i]];
+      }
+
+      buttons.forEach(button => container.appendChild(button));
+    }
+
+    window.addEventListener("DOMContentLoaded", shuffleButtons);
+  </script>
+
+  <script>
+    const buttonsMatch = document.querySelectorAll(".match-btn");
+    const success = document.getElementById("matchSuccess");
+
+    let firstSelection = null;
+    let matchedPairs = 0;
+    const totalPairs = 6;
+
+    buttonsMatch.forEach(button => {
+      button.addEventListener("click", () => {
+
+        if (button.classList.contains("bg-green-400")) return;
+
+        if (!firstSelection) {
+          firstSelection = button;
+          button.classList.add("bg-secondary", "text-white");
+        } else {
+          if (firstSelection.dataset.pair === button.dataset.pair && firstSelection !== button) {
+            firstSelection.classList.remove("bg-secondary", "text-white");
+            button.classList.remove("bg-secondary", "text-white");
+
+            firstSelection.classList.add("bg-green-400", "text-white");
+            button.classList.add("bg-green-400", "text-white");
+
+            matchedPairs++;
+
+            if (matchedPairs === totalPairs) {
+              success.classList.remove("hidden");
+              success.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
+
+          } else {
+            firstSelection.classList.remove("bg-secondary", "text-white");
           }
 
-        } else {
-          // Mauvaise paire
-          firstSelection.classList.remove("bg-secondary", "text-white");
+          firstSelection = null;
         }
 
-        firstSelection = null;
-      }
-
+      });
     });
-  });
-</script>
+  </script>
 
-<!-- Section messages débloqués par date -->
-<script>
-  function checkMessagesByDate() {
-    const today = new Date();
+  <!-- Section messages débloqués par date -->
+  <script>
+    function checkMessagesByDate() {
+      const today = new Date();
+      const cards = document.querySelectorAll(".message-card");
 
-    const cards = document.querySelectorAll(".message-card");
+      cards.forEach(card => {
+        const unlockDate = new Date(card.dataset.date);
+        const lockedDiv = card.querySelector(".locked");
+        const unlockedDiv = card.querySelector(".unlocked");
 
-    cards.forEach(card => {
-      const unlockDate = new Date(card.dataset.date);
+        if (today >= unlockDate) {
+          lockedDiv.classList.add("hidden");
+          unlockedDiv.classList.remove("hidden");
+        }
+      });
+    }
 
-      const lockedDiv = card.querySelector(".locked");
-      const unlockedDiv = card.querySelector(".unlocked");
-
-      if (today >= unlockDate) {
-        lockedDiv.classList.add("hidden");
-        unlockedDiv.classList.remove("hidden");
-      }
-    });
-  }
-
-  window.addEventListener("DOMContentLoaded", checkMessagesByDate);
-</script>
-
-
+    window.addEventListener("DOMContentLoaded", checkMessagesByDate);
+  </script>
 
 </body>
 </html>
