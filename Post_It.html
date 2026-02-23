@@ -31,236 +31,410 @@
 
 <body class="bg-gradient-to-b from-primary via-bgPrimary to-primary text-gray-800">
 
-<!-- HERO -->
-<section class="min-h-[80vh] px-4 sm:px-8 lg:px-16 mt-24 relative rounded-3xl overflow-hidden shadow-2xl">
+  <!-- HERO -->
+  <section class="min-h-[80vh] px-4 sm:px-6 lg:px-16 pt-24 pb-10 flex items-center">
+    <div class="relative w-full rounded-3xl overflow-hidden shadow-2xl">
 
-  <!-- Image de fond -->
-  <div class="absolute inset-0 bg-[url('./ressources/PostIt/Quebec_2.png')] bg-cover bg-center bg-no-repeat"></div>
+      <div class="absolute inset-0 bg-[url('./ressources/PostIt/Quebec_2.png')] bg-cover bg-center"></div>
 
-  <!-- Overlay subtil -->
-  <div class="absolute inset-0 bg-gradient-to-t from-secondary/50 via-secondary/20 to-transparent"></div>
+      <!-- Overlay subtil -->
+      <div class="absolute inset-0 bg-gradient-to-t from-secondary/60 via-secondary/30 to-transparent"></div>
 
-  <!-- Contenu -->
-  <div class="relative container mx-auto flex flex-col items-center justify-center py-24 sm:py-32 text-center text-white">
-    <div class="max-w-4xl px-4">
-      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 drop-shadow-lg">
-        A la recherche des post-its
-      </h1>
+      <div class="relative max-w-3xl mx-auto h-full flex flex-col items-center justify-center px-4 sm:px-6 text-center text-white py-16">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 drop-shadow-lg">
+          A la recherche des post-its
+        </h1>
 
-      <a href="#Explications"
-         class="bg-thirdary px-6 sm:px-8 py-3 rounded-full shadow-lg hover:scale-105 transition">
-        Comment utiliser les indices →
-      </a>
+        <a href="#Explications"
+           class="inline-block bg-thirdary px-6 sm:px-8 py-3 rounded-full shadow-lg hover:scale-105 transition text-sm sm:text-base">
+          Comment utiliser les indices →
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- EXPLICATIONS -->
-<section id="Explications" class="px-4 sm:px-8 py-12 sm:py-20 bg-primary">
-  <div class="container mx-auto flex flex-col sm:flex-row items-center gap-8 sm:gap-12">
+  <!-- EXPLICATIONS -->
+  <section id="Explications" class="px-4 sm:px-6 lg:px-16 py-14 bg-primary">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
 
-    <div class="sm:w-1/2 w-full bg-white/70 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl text-center sm:text-left">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">
-        Comment utiliser les indices ?
-      </h2>
+      <div class="w-full md:w-1/2 bg-white/80 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">
+          Comment utiliser les indices ?
+        </h2>
 
-      <p class="mb-4 leading-relaxed text-justify">
-        Comme tu t'en souviens, quand je suis parti à Quebec, je t'ai laissé des post-its afin que tu puisses avoir une petite trace de moi pendant ton stage. Tu vas donc avoir une localisation ainsi qu'une petite vidéo de moi pour trouver chaque post-it (si ils sont encore là ahahah).
-      </p>
+        <p class="mb-4 leading-relaxed text-justify">
+          Comme tu t'en souviens, quand je suis parti à Quebec, je t'ai laissé des post-its afin que tu puisses avoir une petite trace de moi pendant ton stage. Tu vas donc avoir une localisation ainsi qu'une petite vidéo de moi pour trouver chaque post-it (si ils sont encore là ahahah).
+        </p>
 
-      <p class="leading-relaxed text-justify mb-4">
-        Je te mets en plus une petite explication pour chaque post-it afin que tu saches lequel est approprié pour chaque situation ou moment de ta visite de Quebec.
-      </p>
+        <p class="leading-relaxed text-justify mb-4">
+          Je te mets en plus une petite explication pour chaque post-it afin que tu saches lequel est approprié pour chaque situation ou moment de ta visite de Quebec.
+        </p>
 
-      <p class="leading-relaxed text-justify">
-        Tu me manques déjà <3
-      </p>
-    </div>
-
-    <div class="sm:w-1/2 w-full">
-      <img src="./ressources/PostIt/PostIt_Ville.jpeg"
-           class="w-full rounded-2xl shadow-2xl object-cover"
-           alt="PostIt">
-    </div>
-
-  </div>
-</section>
-
-<!-- Location Template (réutilisable pour toutes les locations) -->
-<section class="px-4 sm:px-8 py-12 sm:py-20 bg-primary">
-  <div class="container mx-auto flex flex-col-reverse sm:flex-row items-center gap-8 sm:gap-12">
-
-    <div class="sm:w-1/2 w-full bg-white/70 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl text-center sm:text-left">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">
-        Location 1
-      </h2>
-
-      <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
-        Ce post-it est fait pour quand tu arrives à Québec, il se trouve à l'endroit où je suis monté dans la haute ville la première fois. Bonne vidéo ;)
-      </p>
-
-      <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
-        (Je t'envie tellement de découvrir tout ça)
-      </p>
-    </div>
-
-    <!-- Carousel -->
-    <div class="sm:w-1/2 w-full relative overflow-hidden rounded-lg aspect-[9/16] sm:aspect-auto max-h-[600px] bg-black/5" data-carousel>
-
-      <!-- Slides -->
-      <div class="flex transition-transform duration-500 ease-in-out w-full h-full" data-slides>
-        <!-- Vidéo -->
-        <div class="min-w-full relative">
-          <video src="./ressources/Note-Escalier/Indications.mp4" controls class="absolute inset-0 w-full h-full object-contain rounded-lg"></video>
-        </div>
-        <!-- Image 1 -->
-        <div class="min-w-full relative">
-          <img src="./ressources/Note-Escalier/Satellite.jpg" alt="Vue satellite" class="absolute inset-0 w-full h-full object-contain rounded-lg"/>
-        </div>
-        <!-- Image 2 -->
-        <div class="min-w-full relative">
-          <img src="./ressources/Note-Escalier/Localisation.jpg" alt="Localisation" class="absolute inset-0 w-full h-full object-contain rounded-lg"/>
-        </div>
+        <p class="leading-relaxed text-justify">
+          Tu me manques déjà &lt;3
+        </p>
       </div>
 
-      <!-- Navigation -->
-      <button class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 text-white px-3 py-1 rounded-full z-10" data-prev>‹</button>
-      <button class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 text-white px-3 py-1 rounded-full z-10" data-next>›</button>
-
-    </div>
-  </div>
-</section>
-
-<!-- Location 2 -->
-<section class="px-4 sm:px-8 py-12 sm:py-20 bg-primary">
-  <div class="container mx-auto flex flex-col-reverse sm:flex-row items-center gap-8 sm:gap-12">
-
-    <div class="sm:w-1/2 w-full bg-white/70 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl text-center sm:text-left">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">
-        Location 2
-      </h2>
-
-      <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
-        Petit point historique pour celui-ci ! J'espère que tu auras le temps de te faire une petite visite générale de la ville et donc tu devrais passer assez proche de celui-ci.
-      </p>
-
-      <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
-        D'ailleurs, si je ne me trompe pas, une fois tu m'avais montré un tobogant de neige près du chateau, ça doit être à 100m max !
-      </p>
-    </div>
-
-    <!-- Carousel -->
-    <div class="sm:w-1/2 w-full relative overflow-hidden rounded-lg aspect-[9/16] sm:aspect-auto max-h-[600px] bg-black/5" data-carousel>
-      <div class="flex transition-transform duration-500 ease-in-out w-full h-full" data-slides>
-        <div class="min-w-full relative">
-          <video src="./ressources/Note-Fort/Instructions.mp4" controls class="absolute inset-0 w-full h-full object-contain rounded-lg"></video>
-        </div>
-        <div class="min-w-full relative">
-          <img src="./ressources/Note-Fort/Satellite1.jpg" alt="Vue satellite" class="absolute inset-0 w-full h-full object-contain rounded-lg"/>
-        </div>
-        <div class="min-w-full relative">
-          <img src="./ressources/Note-Fort/Satellite2.jpg" alt="Vue satellite" class="absolute inset-0 w-full h-full object-contain rounded-lg"/>
-        </div>
-        <div class="min-w-full relative">
-          <img src="./ressources/Note-Fort/Adresse.jpg" alt="Localisation" class="absolute inset-0 w-full h-full object-contain rounded-lg"/>
-        </div>
+      <div class="w-full md:w-1/2">
+        <img src="./ressources/PostIt/PostIt_Ville.jpeg"
+             class="w-full h-auto rounded-2xl shadow-2xl object-cover"
+             alt="PostIt">
       </div>
 
-      <button class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 text-white px-3 py-1 rounded-full z-10" data-prev>‹</button>
-      <button class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 text-white px-3 py-1 rounded-full z-10" data-next>›</button>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Location 3 -->
-<section class="px-4 sm:px-8 py-12 sm:py-20 bg-primary">
-  <div class="container mx-auto flex flex-col-reverse sm:flex-row items-center gap-8 sm:gap-12">
+  <!-- Location 1 -->
+  <section id="Location1" class="px-4 sm:px-6 lg:px-16 py-14 bg-primary">
+    <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
 
-    <div class="sm:w-1/2 w-full bg-white/70 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl text-center sm:text-left">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">
-        Location 3
-      </h2>
+      <div class="w-full lg:w-1/2 bg-white/80 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">
+          Location 1
+        </h2>
 
-      <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
-        Ce post-it est près de ton lieu de stage et donc tu risques de passer assez régulièrement près de lui. Cette soirée là on avait passé une heure à marcher jusqu'à l'hopital mais tellement content d'avoir pu le poser là !
-      </p>
+        <p class="text-gray-700 mb-4 leading-relaxed text-justify">
+          Ce post-it est fait pour quand tu arrives à Québec, il se trouve à l'endroit où je suis monté dans la haute ville la première fois. Bonne vidéo ;)
+        </p>
 
-      <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
-        J'ai pas pris de vidéo pour ce post-it ci mais tu dois chercher au niveau de l'abris du bus (voir même dessus). Bisouuuuuusssssss
-      </p>
-    </div>
-
-    <div class="sm:w-1/2 w-full relative overflow-hidden rounded-lg aspect-[9/16] sm:aspect-auto max-h-[600px] bg-black/5" data-carousel>
-      <div class="flex transition-transform duration-500 ease-in-out w-full h-full" data-slides>
-        <div class="min-w-full relative">
-          <img src="./ressources/Note-Hopital/satellite.jpg" alt="Vue satellite" class="absolute inset-0 w-full h-full object-contain rounded-lg"/>
-        </div>
-        <div class="min-w-full relative">
-          <img src="./ressources/Note-Hopital/location.jpg" alt="Localisation" class="absolute inset-0 w-full h-full object-contain rounded-lg"/>
-        </div>
+        <p class="text-gray-700 mb-4 leading-relaxed text-justify">
+          (Je t'envie tellement de découvrir tout ça)
+        </p>
       </div>
-      <button class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 text-white px-3 py-1 rounded-full z-10" data-prev>‹</button>
-      <button class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 text-white px-3 py-1 rounded-full z-10" data-next>›</button>
-    </div>
-  </div>
-</section>
 
-<!-- Location 4 -->
-<section class="px-4 sm:px-8 py-12 sm:py-20 bg-primary">
-  <div class="container mx-auto flex flex-col-reverse sm:flex-row items-center gap-8 sm:gap-12">
+      <!-- Carousel -->
+      <div
+        class="w-full lg:w-1/2 relative overflow-hidden rounded-lg bg-black/5 max-w-md mx-auto"
+        data-carousel
+      >
+        <!-- Wrapper pour ratio 9/16 responsive -->
+        <div class="relative w-full" style="padding-top:177.78%;">
+          <!-- Slides -->
+          <div
+            class="flex transition-transform duration-500 ease-in-out absolute inset-0"
+            data-slides
+          >
+            <!-- Vidéo -->
+            <div class="min-w-full relative">
+              <video
+                src="./ressources/Note-Escalier/Indications.mp4"
+                controls
+                class="absolute inset-0 w-full h-full object-contain rounded-lg bg-black"
+              ></video>
+            </div>
 
-    <div class="sm:w-1/2 w-full bg-white/70 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl text-center sm:text-left">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">
-        Location 4
-      </h2>
+            <!-- Image 1 -->
+            <div class="min-w-full relative">
+              <img
+                src="./ressources/Note-Escalier/Satellite.jpg"
+                alt="Vue satellite"
+                class="absolute inset-0 w-full h-full object-contain rounded-lg bg-black"
+              />
+            </div>
 
-      <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
-        C'est le post-it donc je suis le mien sûr on va dire ... La façon dont il est collé ne m'inspire pas confiance et il est pas très haut du sol donc on verra avec la neige ...
-      </p>
-
-      <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
-        J'espère que mes indications ont étées assez claire (indice : il est sur le même mur que les graphs, comme j'adore ça)
-      </p>
-    </div>
-
-    <div class="sm:w-1/2 w-full relative overflow-hidden rounded-lg aspect-[9/16] sm:aspect-auto max-h-[600px] bg-black/5" data-carousel>
-      <div class="flex transition-transform duration-500 ease-in-out w-full h-full" data-slides>
-        <div class="min-w-full relative">
-          <video src="./ressources/Note-Airbnb/explications.mp4" controls class="absolute inset-0 w-full h-full object-contain rounded-lg"></video>
+            <!-- Image 2 -->
+            <div class="min-w-full relative">
+              <img
+                src="./ressources/Note-Escalier/Localisation.jpg"
+                alt="Localisation"
+                class="absolute inset-0 w-full h-full object-contain rounded-lg bg-black"
+              />
+            </div>
+          </div>
         </div>
-        <div class="min-w-full relative">
-          <img src="./ressources/Note-Airbnb/satellite.jpg" alt="Vue satellite" class="absolute inset-0 w-full h-full object-contain rounded-lg"/>
-        </div>
-        <div class="min-w-full relative">
-          <img src="./ressources/Note-Airbnb/satellitezoom.jpg" alt="Vue satellite" class="absolute inset-0 w-full h-full object-contain rounded-lg"/>
-        </div>
-        <div class="min-w-full relative">
-          <img src="./ressources/Note-Airbnb/location.jpg" alt="Localisation" class="absolute inset-0 w-full h-full object-contain rounded-lg"/>
-        </div>
+
+        <!-- Bouton précédent -->
+        <button
+          class="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2
+                 bg-black/60 text-white px-2 sm:px-3 py-1 rounded-full z-10 text-lg"
+          data-prev
+        >
+          ‹
+        </button>
+
+        <!-- Bouton suivant -->
+        <button
+          class="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2
+                 bg-black/60 text-white px-2 sm:px-3 py-1 rounded-full z-10 text-lg"
+          data-next
+        >
+          ›
+        </button>
       </div>
-      <button class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 text-white px-3 py-1 rounded-full z-10" data-prev>‹</button>
-      <button class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 text-white px-3 py-1 rounded-full z-10" data-next>›</button>
+
     </div>
-  </div>
-</section>
+  </section>
 
-<script>
-  document.querySelectorAll("[data-carousel]").forEach(carousel => {
-    const slidesContainer = carousel.querySelector("[data-slides]");
-    const slides = slidesContainer.children;
-    let index = 0;
+  <!-- Location 2 -->
+  <section id="Location2" class="px-4 sm:px-6 lg:px-16 py-14 bg-primary">
+    <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
 
-    carousel.querySelector("[data-next]").addEventListener("click", () => {
-      index = (index + 1) % slides.length;
-      slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+      <div class="w-full lg:w-1/2 bg-white/80 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">
+          Location 2
+        </h2>
+
+        <p class="text-gray-700 mb-4 leading-relaxed text-justify">
+          Petit point historique pour celui-ci ! J'espère que tu auras le temps de te faire une petite visite générale de la ville et donc tu devrais passer assez proche de celui-ci.
+        </p>
+
+        <p class="text-gray-700 mb-4 leading-relaxed text-justify">
+          D'ailleurs, si je ne me trompe pas, une fois tu m'avais montré un tobogant de neige près du chateau, ça doit être à 100m max !
+        </p>
+      </div>
+
+      <!-- Carousel -->
+      <div
+        class="w-full lg:w-1/2 relative overflow-hidden rounded-lg bg-black/5 max-w-md mx-auto"
+        data-carousel
+      >
+        <div class="relative w-full" style="padding-top:177.78%;">
+          <!-- Slides -->
+          <div
+            class="flex transition-transform duration-500 ease-in-out absolute inset-0"
+            data-slides
+          >
+            <!-- Vidéo -->
+            <div class="min-w-full relative">
+              <video
+                src="./ressources/Note-Fort/Instructions.mp4"
+                controls
+                class="absolute inset-0 w-full h-full object-contain rounded-lg bg-black"
+              ></video>
+            </div>
+
+            <!-- Image 1 -->
+            <div class="min-w-full relative">
+              <img
+                src="./ressources/Note-Fort/Satellite1.jpg"
+                alt="Vue satellite"
+                class="absolute inset-0 w-full h-full object-contain rounded-lg bg-black"
+              />
+            </div>
+
+            <!-- Image 2 -->
+            <div class="min-w-full relative">
+              <img
+                src="./ressources/Note-Fort/Satellite2.jpg"
+                alt="Vue satellite"
+                class="absolute inset-0 w-full h-full object-contain rounded-lg bg-black"
+              />
+            </div>
+
+            <!-- Image 3 -->
+            <div class="min-w-full relative">
+              <img
+                src="./ressources/Note-Fort/Adresse.jpg"
+                alt="Localisation"
+                class="absolute inset-0 w-full h-full object-contain rounded-lg bg-black"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Bouton précédent -->
+        <button
+          class="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2
+                 bg-black/60 text-white px-2 sm:px-3 py-1 rounded-full z-10 text-lg"
+          data-prev
+        >
+          ‹
+        </button>
+
+        <!-- Bouton suivant -->
+        <button
+          class="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2
+                 bg-black/60 text-white px-2 sm:px-3 py-1 rounded-full z-10 text-lg"
+          data-next
+        >
+          ›
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Location 3 -->
+  <section id="Location3" class="px-4 sm:px-6 lg:px-16 py-14 bg-primary">
+    <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+
+      <div class="w-full lg:w-1/2 bg-white/80 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">
+          Location 3
+        </h2>
+
+        <p class="text-gray-700 mb-4 leading-relaxed text-justify">
+          Ce post-it est près de ton lieu de stage et donc tu risques de passer assez régulièrement près de lui. Cette soirée là on avait passé une heure à marcher jusqu'à l'hopital mais tellement content d'avoir pu le poser là !
+        </p>
+
+        <p class="text-gray-700 mb-4 leading-relaxed text-justify">
+          J'ai pas pris de vidéo pour ce post-it ci mais tu dois chercher au niveau de l'abris du bus (voir même dessus). Bisouuuuuusssssss
+        </p>
+      </div>
+
+      <!-- Carousel -->
+      <div
+        class="w-full lg:w-1/2 relative overflow-hidden rounded-lg bg-black/5 max-w-md mx-auto"
+        data-carousel
+      >
+        <div class="relative w-full" style="padding-top:177.78%;">
+          <!-- Slides -->
+          <div
+            class="flex transition-transform duration-500 ease-in-out absolute inset-0"
+            data-slides
+          >
+            <!-- Image 1 -->
+            <div class="min-w-full relative">
+              <img
+                src="./ressources/Note-Hopital/satellite.jpg"
+                alt="Vue satellite"
+                class="absolute inset-0 w-full h-full object-contain rounded-lg bg-black"
+              />
+            </div>
+
+            <!-- Image 2 -->
+            <div class="min-w-full relative">
+              <img
+                src="./ressources/Note-Hopital/location.jpg"
+                alt="Vue satellite"
+                class="absolute inset-0 w-full h-full object-contain rounded-lg bg-black"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Bouton précédent -->
+        <button
+          class="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2
+                 bg-black/60 text-white px-2 sm:px-3 py-1 rounded-full z-10 text-lg"
+          data-prev
+        >
+          ‹
+        </button>
+
+        <!-- Bouton suivant -->
+        <button
+          class="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2
+                 bg-black/60 text-white px-2 sm:px-3 py-1 rounded-full z-10 text-lg"
+          data-next
+        >
+          ›
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Location 4 -->
+  <section id="Location4" class="px-4 sm:px-6 lg:px-16 py-14 bg-primary">
+    <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+
+      <div class="w-full lg:w-1/2 bg-white/80 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">
+          Location 4
+        </h2>
+
+        <p class="text-gray-700 mb-4 leading-relaxed text-justify">
+          C'est le post-it donc je suis le mien sûr on va dire ... La façon dont il est collé ne m'inspire pas confiance et il est pas très haut du sol donc on verra avec la neige ...
+        </p>
+
+        <p class="text-gray-700 mb-4 leading-relaxed text-justify">
+          J'espère que mes indications ont étées assez claire (indice : il est sur le même mur que les graphs, comme j'adore ça)
+        </p>
+      </div>
+
+      <!-- Carousel -->
+      <div
+        class="w-full lg:w-1/2 relative overflow-hidden rounded-lg bg-black/5 max-w-md mx-auto"
+        data-carousel
+      >
+        <div class="relative w-full" style="padding-top:177.78%;">
+          <!-- Slides -->
+          <div
+            class="flex transition-transform duration-500 ease-in-out absolute inset-0"
+            data-slides
+          >
+            <!-- Vidéo -->
+            <div class="min-w-full relative">
+              <video
+                src="./ressources/Note-Airbnb/explications.mp4"
+                controls
+                class="absolute inset-0 w-full h-full object-contain rounded-lg bg-black"
+              ></video>
+            </div>
+
+            <!-- Image 1 -->
+            <div class="min-w-full relative">
+              <img
+                src="./ressources/Note-Airbnb/satellite.jpg"
+                alt="Vue satellite"
+                class="absolute inset-0 w-full h-full object-contain rounded-lg bg-black"
+              />
+            </div>
+
+            <!-- Image 2 -->
+            <div class="min-w-full relative">
+              <img
+                src="./ressources/Note-Airbnb/satellitezoom.jpg"
+                alt="Vue satellite"
+                class="absolute inset-0 w-full h-full object-contain rounded-lg bg-black"
+              />
+            </div>
+
+            <!-- Image 3 -->
+            <div class="min-w-full relative">
+              <img
+                src="./ressources/Note-Airbnb/location.jpg"
+                alt="Localisation"
+                class="absolute inset-0 w-full h-full object-contain rounded-lg bg-black"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Bouton précédent -->
+        <button
+          class="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2
+                 bg-black/60 text-white px-2 sm:px-3 py-1 rounded-full z-10 text-lg"
+          data-prev
+        >
+          ‹
+        </button>
+
+        <!-- Bouton suivant -->
+        <button
+          class="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2
+                 bg-black/60 text-white px-2 sm:px-3 py-1 rounded-full z-10 text-lg"
+          data-next
+        >
+          ›
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll("[data-carousel]").forEach(carousel => {
+      const slidesContainer = carousel.querySelector("[data-slides]");
+      const slides = slidesContainer.children;
+      let index = 0;
+
+      const update = () => {
+        slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+      };
+
+      carousel.querySelector("[data-next]").addEventListener("click", () => {
+        index = (index + 1) % slides.length;
+        update();
+      });
+
+      carousel.querySelector("[data-prev]").addEventListener("click", () => {
+        index = (index - 1 + slides.length) % slides.length;
+        update();
+      });
     });
-
-    carousel.querySelector("[data-prev]").addEventListener("click", () => {
-      index = (index - 1 + slides.length) % slides.length;
-      slidesContainer.style.transform = `translateX(-${index * 100}%)`;
-    });
-  });
-</script>
+  </script>
 
 </body>
 </html>
