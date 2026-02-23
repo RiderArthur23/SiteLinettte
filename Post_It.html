@@ -86,56 +86,71 @@
   </div>
 </section>
 
-
-<!-- Location 1 -->
+<!-- Location Template (réutilisable pour toutes les locations) -->
 <section class="px-4 sm:px-8 py-12 sm:py-20 bg-primary">
-  <div class="container mx-auto flex flex-col sm:flex-row items-center gap-8 sm:gap-12">
+  <div class="container mx-auto flex flex-col-reverse sm:flex-row items-center gap-8 sm:gap-12">
 
-    <!-- Texte -->
-    <div class="w-full sm:w-1/2 bg-white/70 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl text-center sm:text-left">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">Location 1</h2>
+    <div class="sm:w-1/2 w-full bg-white/70 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl text-center sm:text-left">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">
+        Location 1
+      </h2>
+
       <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
         Ce post-it est fait pour quand tu arrives à Québec, il se trouve à l'endroit où je suis monté dans la haute ville la première fois. Bonne vidéo ;)
       </p>
+
       <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
         (Je t'envie tellement de découvrir tout ça)
       </p>
     </div>
 
     <!-- Carousel -->
-    <div class="w-full sm:w-1/2 relative overflow-hidden rounded-lg aspect-[9/16] sm:aspect-auto max-h-[600px] bg-black/5" data-carousel>
+    <div class="sm:w-1/2 w-full relative overflow-hidden rounded-lg aspect-[9/16] sm:aspect-auto max-h-[600px] bg-black/5" data-carousel>
+
+      <!-- Slides -->
       <div class="flex transition-transform duration-500 ease-in-out w-full h-full" data-slides>
+        <!-- Vidéo -->
         <div class="min-w-full relative">
           <video src="./ressources/Note-Escalier/Indications.mp4" controls class="absolute inset-0 w-full h-full object-contain rounded-lg"></video>
         </div>
+        <!-- Image 1 -->
         <div class="min-w-full relative">
           <img src="./ressources/Note-Escalier/Satellite.jpg" alt="Vue satellite" class="absolute inset-0 w-full h-full object-contain rounded-lg"/>
         </div>
+        <!-- Image 2 -->
         <div class="min-w-full relative">
           <img src="./ressources/Note-Escalier/Localisation.jpg" alt="Localisation" class="absolute inset-0 w-full h-full object-contain rounded-lg"/>
         </div>
       </div>
+
+      <!-- Navigation -->
       <button class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 text-white px-3 py-1 rounded-full z-10" data-prev>‹</button>
       <button class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 text-white px-3 py-1 rounded-full z-10" data-next>›</button>
+
     </div>
   </div>
 </section>
 
 <!-- Location 2 -->
 <section class="px-4 sm:px-8 py-12 sm:py-20 bg-primary">
-  <div class="container mx-auto flex flex-col sm:flex-row items-center gap-8 sm:gap-12">
+  <div class="container mx-auto flex flex-col-reverse sm:flex-row items-center gap-8 sm:gap-12">
 
-    <div class="w-full sm:w-1/2 bg-white/70 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl text-center sm:text-left">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">Location 2</h2>
+    <div class="sm:w-1/2 w-full bg-white/70 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl text-center sm:text-left">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">
+        Location 2
+      </h2>
+
       <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
         Petit point historique pour celui-ci ! J'espère que tu auras le temps de te faire une petite visite générale de la ville et donc tu devrais passer assez proche de celui-ci.
       </p>
+
       <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
         D'ailleurs, si je ne me trompe pas, une fois tu m'avais montré un tobogant de neige près du chateau, ça doit être à 100m max !
       </p>
     </div>
 
-    <div class="w-full sm:w-1/2 relative overflow-hidden rounded-lg aspect-[9/16] sm:aspect-auto max-h-[600px] bg-black/5" data-carousel>
+    <!-- Carousel -->
+    <div class="sm:w-1/2 w-full relative overflow-hidden rounded-lg aspect-[9/16] sm:aspect-auto max-h-[600px] bg-black/5" data-carousel>
       <div class="flex transition-transform duration-500 ease-in-out w-full h-full" data-slides>
         <div class="min-w-full relative">
           <video src="./ressources/Note-Fort/Instructions.mp4" controls class="absolute inset-0 w-full h-full object-contain rounded-lg"></video>
@@ -150,6 +165,7 @@
           <img src="./ressources/Note-Fort/Adresse.jpg" alt="Localisation" class="absolute inset-0 w-full h-full object-contain rounded-lg"/>
         </div>
       </div>
+
       <button class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 text-white px-3 py-1 rounded-full z-10" data-prev>‹</button>
       <button class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 text-white px-3 py-1 rounded-full z-10" data-next>›</button>
     </div>
@@ -158,19 +174,23 @@
 
 <!-- Location 3 -->
 <section class="px-4 sm:px-8 py-12 sm:py-20 bg-primary">
-  <div class="container mx-auto flex flex-col sm:flex-row items-center gap-8 sm:gap-12">
+  <div class="container mx-auto flex flex-col-reverse sm:flex-row items-center gap-8 sm:gap-12">
 
-    <div class="w-full sm:w-1/2 bg-white/70 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl text-center sm:text-left">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">Location 3</h2>
+    <div class="sm:w-1/2 w-full bg-white/70 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl text-center sm:text-left">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">
+        Location 3
+      </h2>
+
       <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
         Ce post-it est près de ton lieu de stage et donc tu risques de passer assez régulièrement près de lui. Cette soirée là on avait passé une heure à marcher jusqu'à l'hopital mais tellement content d'avoir pu le poser là !
       </p>
+
       <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
         J'ai pas pris de vidéo pour ce post-it ci mais tu dois chercher au niveau de l'abris du bus (voir même dessus). Bisouuuuuusssssss
       </p>
     </div>
 
-    <div class="w-full sm:w-1/2 relative overflow-hidden rounded-lg aspect-[9/16] sm:aspect-auto max-h-[600px] bg-black/5" data-carousel>
+    <div class="sm:w-1/2 w-full relative overflow-hidden rounded-lg aspect-[9/16] sm:aspect-auto max-h-[600px] bg-black/5" data-carousel>
       <div class="flex transition-transform duration-500 ease-in-out w-full h-full" data-slides>
         <div class="min-w-full relative">
           <img src="./ressources/Note-Hopital/satellite.jpg" alt="Vue satellite" class="absolute inset-0 w-full h-full object-contain rounded-lg"/>
@@ -187,19 +207,23 @@
 
 <!-- Location 4 -->
 <section class="px-4 sm:px-8 py-12 sm:py-20 bg-primary">
-  <div class="container mx-auto flex flex-col sm:flex-row items-center gap-8 sm:gap-12">
+  <div class="container mx-auto flex flex-col-reverse sm:flex-row items-center gap-8 sm:gap-12">
 
-    <div class="w-full sm:w-1/2 bg-white/70 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl text-center sm:text-left">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">Location 4</h2>
+    <div class="sm:w-1/2 w-full bg-white/70 backdrop-blur p-6 sm:p-8 rounded-2xl shadow-xl text-center sm:text-left">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-secondary">
+        Location 4
+      </h2>
+
       <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
         C'est le post-it donc je suis le mien sûr on va dire ... La façon dont il est collé ne m'inspire pas confiance et il est pas très haut du sol donc on verra avec la neige ...
       </p>
+
       <p class="text-gray-700 mb-4 leading-relaxed text-justify sm:text-start">
         J'espère que mes indications ont étées assez claire (indice : il est sur le même mur que les graphs, comme j'adore ça)
       </p>
     </div>
 
-    <div class="w-full sm:w-1/2 relative overflow-hidden rounded-lg aspect-[9/16] sm:aspect-auto max-h-[600px] bg-black/5" data-carousel>
+    <div class="sm:w-1/2 w-full relative overflow-hidden rounded-lg aspect-[9/16] sm:aspect-auto max-h-[600px] bg-black/5" data-carousel>
       <div class="flex transition-transform duration-500 ease-in-out w-full h-full" data-slides>
         <div class="min-w-full relative">
           <video src="./ressources/Note-Airbnb/explications.mp4" controls class="absolute inset-0 w-full h-full object-contain rounded-lg"></video>
