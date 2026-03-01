@@ -520,17 +520,6 @@
 
         <!-- Message 2 -->
         <div class="message-card bg-white p-5 sm:p-6 rounded-lg shadow-md"
-             data-date="2026-02-29">
-          <div class="locked text-gray-500 text-sm sm:text-base">
-            🔒 Ce message sera disponible le 29 février 2026
-          </div>
-          <div class="unlocked hidden text-gray-800 text-base sm:text-lg">
-            Normalement à ce stade tu dois avoir déjà pris quelques repères.. La ville te plaît ? Oublie pas ton homme belge musclé !
-          </div>
-        </div>
-
-        <!-- Message 3 -->
-        <div class="message-card bg-white p-5 sm:p-6 rounded-lg shadow-md"
              data-date="2026-03-01">
           <div class="locked text-gray-500 text-sm sm:text-base">
             🔒 Ce message sera disponible le 1 mars 2026
@@ -540,11 +529,22 @@
           </div>
         </div>
 
+        <!-- Message 3 -->
+        <div class="message-card bg-white p-5 sm:p-6 rounded-lg shadow-md"
+             data-date="2026-03-03">
+          <div class="locked text-gray-500 text-sm sm:text-base">
+            🔒 Ce message sera disponible le 3 mars 2026
+          </div>
+          <div class="unlocked hidden text-gray-800 text-base sm:text-lg">
+            Normalement à ce stade tu dois avoir déjà pris quelques repères.. La ville te plaît ? Oublie pas ton homme belge musclé !
+          </div>
+        </div>
+
         <!-- Message 4 -->
         <div class="message-card bg-white p-5 sm:p-6 rounded-lg shadow-md"
-             data-date="2026-03-04">
+             data-date="2026-03-05">
           <div class="locked text-gray-500 text-sm sm:text-base">
-            🔒 Ce message sera disponible le 4 mars 2026
+            🔒 Ce message sera disponible le 5 mars 2026
           </div>
           <div class="unlocked hidden text-gray-800 text-base sm:text-lg">
             Quans j'écris ça, tu n'es pas encore partie mais je commence à réaliser que tu vas être loin pendant un moment .. Même si je ne suis pas fan des appels, je serai toujours content d'en avoir un de ta part &lt;3
@@ -642,7 +642,7 @@
     const activities = {
       running: [1.25, 9.57],   // km par sortie
       cycling: [],       // km par sortie
-      gym: []            // 1 = 1 séance
+      gym: [1]            // 1 = 1 séance
     };
 
     function updateStats() {
